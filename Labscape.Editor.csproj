@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB413867-5A17-364E-7E59-B6EDC15DAF30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2017.4.3f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_3;UNITY_2017_4;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_3;UNITY_2017_4;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="GameAnalytics">
+      <HintPath>Assets/Plugins/GameAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/ayse/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/ayse/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Users/ayse/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/ayse/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/ayse/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/ayse/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Labscape.csproj">
+      <Project>{E473F50B-3EE7-9571-F8A3-EFACC5BF3230}</Project>
+      <Name>Labscape</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\GameAnalytics\Editor\GA_AutoRun.cs" />
+    <Compile Include="Assets\GameAnalytics\Editor\GA_ContinuationManager.cs" />
+    <Compile Include="Assets\GameAnalytics\Editor\GA_EditorUtilities.cs" />
+    <Compile Include="Assets\GameAnalytics\Editor\GA_Menu.cs" />
+    <Compile Include="Assets\GameAnalytics\Editor\GA_PostprocessBuild.cs" />
+    <Compile Include="Assets\GameAnalytics\Editor\GA_SettingsInspector.cs" />
+    <Compile Include="Assets\GameAnalytics\Editor\GA_SignUp.cs" />
+    <Compile Include="Assets\GameAnalytics\Editor\GA_UpdateWindow.cs" />
+    <Compile Include="Assets\GameAnalytics\Editor\GameAnalyticsInspector.cs" />
+    <Compile Include="Assets\GameAnalytics\Plugins\Playmaker\Editor\PlayMakerPresenceCheck.cs" />
+    <Compile Include="Assets\GameAnalytics\Plugins\Playmaker\Editor\SendProgressionEventActionEditor.cs" />
+    <Compile Include="Assets\GameAnalytics\Plugins\Playmaker\Editor\SendResourceEventActionEditor.cs" />
+    <Compile Include="Assets\GameAnalytics\Plugins\Playmaker\Editor\SetGenderActionEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\GameAnalytics\Readme.txt" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\README.txt" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\proguard.txt" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_google_signin_btn_text_dark.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_google_signin_btn_text_light.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_plus_signin_btn_text_dark.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_plus_signin_btn_text_light.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\wallet_primary_text_holo_light.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\wallet_secondary_text_holo_dark.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\cast_ic_notification_connecting.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_google_signin_btn_icon_dark.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_google_signin_btn_icon_light.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_google_signin_btn_text_dark.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_google_signin_btn_text_light.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_plus_signin_btn_icon_dark.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_plus_signin_btn_icon_light.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_plus_signin_btn_text_dark.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_plus_signin_btn_text_light.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\layout-v21\place_autocomplete_fragment.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\layout\place_autocomplete_fragment.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\layout\place_autocomplete_item_powered_by_google.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\layout\place_autocomplete_item_prediction.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\layout\place_autocomplete_progress.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-af\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-af\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-af\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-am\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-am\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-am\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-am\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ar\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ar\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ar\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ar\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-az-rAZ\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-az-rAZ\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-az-rAZ\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bg\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bg\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bg\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bg\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bn-rBD\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bn-rBD\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bn-rBD\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ca\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ca\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ca\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ca\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-cs\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-cs\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-cs\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-cs\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-da\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-da\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-da\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-da\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-de\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-de\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-de\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-de\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rAU\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rAU\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rAU\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rAU\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rGB\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rGB\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rGB\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rGB\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rIN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rIN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rIN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rIN\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es-rUS\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es-rUS\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es-rUS\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es-rUS\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-et-rEE\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-et-rEE\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-et-rEE\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-eu-rES\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-eu-rES\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-eu-rES\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fa\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fa\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fa\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fa\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fi\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fi\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fi\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fi\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr-rCA\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr-rCA\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr-rCA\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-gl-rES\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-gl-rES\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-gl-rES\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-gu-rIN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-gu-rIN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-gu-rIN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hi\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hi\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hi\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hi\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hr\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hr\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hr\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hr\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hu\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hu\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hu\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hu\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hy-rAM\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hy-rAM\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hy-rAM\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-in\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-in\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-in\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-in\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-is-rIS\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-is-rIS\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-is-rIS\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-it\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-it\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-it\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-it\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-iw\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-iw\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-iw\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-iw\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ja\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ja\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ja\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ja\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ka-rGE\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ka-rGE\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ka-rGE\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-kk-rKZ\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-kk-rKZ\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-kk-rKZ\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-km-rKH\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-km-rKH\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-km-rKH\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-kn-rIN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-kn-rIN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-kn-rIN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ko\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ko\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ko\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ko\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ky-rKG\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ky-rKG\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ky-rKG\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lo-rLA\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lo-rLA\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lo-rLA\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lt\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lt\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lt\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lt\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lv\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lv\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lv\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lv\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mk-rMK\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mk-rMK\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mk-rMK\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ml-rIN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ml-rIN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ml-rIN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mn-rMN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mn-rMN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mn-rMN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mr-rIN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mr-rIN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mr-rIN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ms-rMY\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ms-rMY\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ms-rMY\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ms-rMY\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-my-rMM\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-my-rMM\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-my-rMM\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nb\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nb\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nb\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nb\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ne-rNP\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ne-rNP\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ne-rNP\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nl\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nl\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nl\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nl\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pa-rIN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pa-rIN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pa-rIN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pl\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pl\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pl\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pl\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rBR\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rBR\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rBR\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rBR\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rPT\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rPT\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rPT\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rPT\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ro\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ro\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ro\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ro\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ru\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ru\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ru\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ru\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-si-rLK\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-si-rLK\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-si-rLK\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sk\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sk\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sk\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sk\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sl\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sl\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sl\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sl\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sq-rAL\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sq-rAL\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sq-rAL\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sr\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sr\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sr\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sr\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sv\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sv\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sv\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sv\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sw\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sw\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sw\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sw\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ta-rIN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ta-rIN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ta-rIN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-te-rIN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-te-rIN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-te-rIN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-th\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-th\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-th\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-th\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tl\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tl\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tl\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tl\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tr\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tr\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tr\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tr\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-uk\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-uk\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-uk\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-uk\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ur-rPK\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ur-rPK\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ur-rPK\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-uz-rUZ\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-uz-rUZ\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-uz-rUZ\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-v11\appinvite_styles.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-v21\appinvite_styles.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-vi\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-vi\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-vi\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-vi\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rCN\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rCN\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rCN\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rCN\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rHK\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rHK\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rHK\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rHK\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rTW\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rTW\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rTW\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rTW\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zu\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zu\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zu\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\admob_ads_attrs.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\admob_iap_style.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\admob_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\appinvite_styles.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\auth_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\base_attrs.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\base_colors.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\base_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\cast_ids.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\cast_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\common_attrs.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\common_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\location_colors.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\location_dimens.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\location_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\maps_attrs.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\version.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\wallet_attrs.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\wallet_colors.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\wallet_strings.xml" />
+    <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\wallet_styles.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
